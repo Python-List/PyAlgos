@@ -17,10 +17,7 @@ class BinaryTree(object):
         is in the tree, return
         False otherwise."""
         if self.root is not None:
-            if self.root.value == find_val:
-                return True
-            else:
-                return self.preorder_search(self.root, find_val)
+            return self.preorder_search(self.root, find_val)
 
     def preorder_search(self, start, find_val):
         if start is not None:
